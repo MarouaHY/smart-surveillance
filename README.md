@@ -176,7 +176,7 @@ Streamlit UI (Visualization)
 
 
 
-## 📚 Resources
+##  Resources
 
 - **YOLOv11 Documentation**: https://docs.ultralytics.com/
 - **OpenCV Docs**: https://docs.opencv.org/
