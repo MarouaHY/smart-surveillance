@@ -113,7 +113,7 @@ class VideoProcessor:
     
 
     def process_video_file(self, video_path, output_path=None, max_frames=None, 
-                           skip_frames=0, show_boxes=True, show_zones=True):
+                           skip_frames=4, show_boxes=True, show_zones=True):
         """
         Process a video file frame by frame.
         
