@@ -128,6 +128,7 @@ class VideoProcessor:
         Yields:
             Dictionary containing processed frame, stats, frame number, and progress
         """
+        
         cap = cv2.VideoCapture(str(video_path))
         if not cap.isOpened():
             raise ValueError(f"Cannot open video file: {video_path}")
@@ -160,10 +161,11 @@ class VideoProcessor:
                 
                 frame_count += 1
                 
-                # Skip frames if needed
-                if skip_frames > 0 and frame_count % (skip_frames + 1) != 0:
-                    continue
-                
+                # ----  (skip 4 frames = process only 1/5 frames) ----
+                if skip_frames > 0:
+                    if (frame_count - 1) % (skip_frames + 1) != 0:
+                        continue
+                     
                 # Process single frame
                 processed_frame, stats = self.process_frame(frame, show_boxes, show_zones)
                 
@@ -193,7 +195,7 @@ class VideoProcessor:
             self.is_processing = False
 
     def process_webcam(self, camera_index=0, resolution=(640, 480),
-                       show_boxes=True, show_zones=True):
+                       show_boxes=True,skip_frames=4, show_zones=True):
         """
         Process a live webcam stream.
         
@@ -228,7 +230,11 @@ class VideoProcessor:
                     break
                 
                 frame_count += 1
-                
+                # ---- SKIP FRAME  ----
+                if skip_frames > 0:
+                    if (frame_count - 1) % (skip_frames + 1) != 0:
+                        continue
+                # Process single frame
                 processed_frame, stats = self.process_frame(frame, show_boxes, show_zones)
                 
                 yield {
