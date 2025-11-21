@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💻 Usage
+##  Usage
 
 ### Running the Application
 
@@ -106,7 +106,7 @@ streamlit run app.py
 
 ---
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Architecture Overview
 
@@ -152,7 +152,7 @@ Streamlit UI (Visualization)
 
 ---
 
-## ⚠️ Limitations & Future Improvements
+## Limitations & Future Improvements
 
 ### Current Limitations
 
@@ -185,19 +185,19 @@ Streamlit UI (Visualization)
 
 ---
 
-## 👤 Author
+##  Author
 
 **Maroua Hayane**  
 Candidate for AI Engineer position at Digitup Company
 
 ---
 
-## 📄 License
+##  License
 
 This project is created for the Digitup Company technical assessment.
 
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Ultralytics for YOLOv11
 - Streamlit for the amazing UI framework
