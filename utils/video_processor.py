@@ -230,7 +230,7 @@ class VideoProcessor:
                     break
                 
                 frame_count += 1
-                # ---- SKIP FRAME  ----
+                # ----  (skip 4 frames = process only 1/5 frames) ----
                 if skip_frames > 0:
                     if (frame_count - 1) % (skip_frames + 1) != 0:
                         continue
