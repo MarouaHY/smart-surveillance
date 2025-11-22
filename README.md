@@ -148,10 +148,6 @@ Streamlit UI (Visualization)
 - Real-time visualization
 - Export functionality
 ---
----
-
----
-
 ## Limitations & Future Improvements
 
 ### Current Limitations
