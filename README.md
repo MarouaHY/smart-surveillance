@@ -51,7 +51,7 @@ A comprehensive surveillance system designed specifically for commercial centers
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/smart-surveillance.git
+git clone https://github.com/maroua_hayane/smart-surveillance.git
 cd smart-surveillance
 ```
 
