@@ -1,4 +1,4 @@
-# 🏢 Smart Surveillance System
+# Smart Surveillance System
 
 **Advanced Object Detection & Behavior Analysis using YOLOv11**
 
