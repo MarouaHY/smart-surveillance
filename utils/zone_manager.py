@@ -1,5 +1,5 @@
 """
-Enhanced Zone Management Module
+Zone Management Module
 Handles zones with counting for all object types and violations for ALL objects
 """
 
